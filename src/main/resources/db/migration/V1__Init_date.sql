@@ -5,9 +5,9 @@ CREATE TABLE autorizate (
     rule VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE order (
+CREATE TABLE "order" (
     order_id VARCHAR(255) NOT NULL PRIMARY KEY,
-    dish_id VARCHAR(255) NOT NULL PRIMARY KEY,
+    dish_id VARCHAR(255) NOT NULL,
     dish_name VARCHAR(255) NOT NULL,
     caloric_value VARCHAR(255) NOT NULL,
     price VARCHAR(255) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE order (
 
 CREATE TABLE order_history (
     order_id VARCHAR(255) NOT NULL PRIMARY KEY,
-    dish_id VARCHAR(255) NOT NULL PRIMARY KEY,
+    dish_id VARCHAR(255) NOT NULL,
     dish_name VARCHAR(255) NOT NULL,
     caloric_value VARCHAR(255) NOT NULL,
     price VARCHAR(255) NOT NULL,
@@ -27,6 +27,3 @@ CREATE TABLE menu (
      dish_id VARCHAR(255) NOT NULL PRIMARY KEY,
      dish_name VARCHAR(255) NOT NULL
 );
-
-ALTER TABLE order
-ADD CONSTRAINT fk_dish_id FOREIGN KEY (dish_id) REFERENCES menu(dish_id) ON DELETE CASCADE;
