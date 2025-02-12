@@ -1,10 +1,10 @@
-package com.example.SchoolFoodSystem.Order.Rep;
+package com.example.SchoolFoodSystem.Menu.Rep;
 
 import com.example.SchoolFoodSystem.Admin.Entity.Admin;
-import com.example.SchoolFoodSystem.Order.Entity.Order;
+import com.example.SchoolFoodSystem.Menu.Entity.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface OrderRep extends JpaRepository<Order, Long> {
+public interface MenuRep extends JpaRepository<Menu, Long> {
 }

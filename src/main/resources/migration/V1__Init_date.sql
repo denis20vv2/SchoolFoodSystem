@@ -1,4 +1,4 @@
-CREATE TABLE "user" (
+CREATE TABLE autorizate (
     user_id VARCHAR(255) NOT NULL PRIMARY KEY,
     user_name VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,

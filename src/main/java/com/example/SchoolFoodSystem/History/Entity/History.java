@@ -1,4 +1,4 @@
-package com.example.SchoolFoodSystem.Order.Entity;
+package com.example.SchoolFoodSystem.History.Entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "order")
+@Table(name = "order_history")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class History {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
